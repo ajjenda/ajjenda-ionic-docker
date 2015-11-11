@@ -1,6 +1,7 @@
 FROM ubuntu
 MAINTAINER Yoseph Reuveni <yoseph.reuveni@gmail.com>
- 
+
+RUN sudo apt-get update
 RUN sudo apt-get install nodejs -y
 RUN sudo apt-get install npm -y
  
