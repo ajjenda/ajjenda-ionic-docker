@@ -1,6 +1,9 @@
 FROM ubuntu
 MAINTAINER Yoseph Reuveni <yoseph.reuveni@gmail.com>
  
+RUN sudo apt-get install nodejs -y
+RUN sudo apt-get install npm -y
+ 
 # setup Ajjenda Server
 RUN sudo npm install -g phonegap
 RUN sudo npm install -g cordova
