@@ -4,13 +4,14 @@ MAINTAINER Yoseph Reuveni <yoseph.reuveni@gmail.com>
 RUN sudo apt-get update
 RUN sudo apt-get install nodejs -y
 RUN sudo apt-get install npm -y
+
+RUN sudo npm install -g n
+RUN sudo n 0.12.7
  
 # setup Ajjenda Server
 RUN sudo npm install -g phonegap
 RUN sudo npm install -g cordova
 RUN sudo npm install -g ionic
-RUN sudo npm install -g n
-RUN sudo n 0.12.7
 RUN sudo npm install -g bower
 
 RUN phonegap -v
