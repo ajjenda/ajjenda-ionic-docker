@@ -2,8 +2,7 @@ FROM ubuntu
 MAINTAINER Yoseph Reuveni <yoseph.reuveni@gmail.com>
 
 RUN sudo apt-get update
-RUN sudo apt-get install nodejs -y
-RUN sudo apt-get install npm -y
+RUN sudo apt-get install nodejs npm wget -y
 
 RUN sudo npm install -g n
 RUN sudo n 0.12.7
